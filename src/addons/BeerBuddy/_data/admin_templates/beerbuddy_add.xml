@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template title="beerbuddy_add" version_id="1000010" version_string="1.0.0">
+    <![CDATA[
+    <xf:title>Add Beer</xf:title>
+    <xf:h1>Add Beer</xf:h1>
+
+    <xf:form action="{{ link('beerbuddy/add') }}" method="post">
+        <xf:textboxrow name="beer_name" label="Beer Name" required="true" />
+        <xf:textboxrow name="url" label="BeerAdvocate URL" required="true" />
+        <xf:submitrow submit="Save" />
+    </xf:form>
+    ]]>
+</template>
