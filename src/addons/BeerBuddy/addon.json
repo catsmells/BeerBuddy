@@ -1,0 +1,12 @@
+{
+    "legacy_addon_id": "",
+    "title": "BeerBuddy",
+    "description": "Highlights beer mentions in posts and links within BeerAdvocate.",
+    "version_id": 1000010,
+    "version_string": "1.0.0",
+    "dev": "Dr. Cat",
+    "dev_url": "https://drcat.fun/",
+    "require": {
+        "XF": "2.2"
+    }
+}
