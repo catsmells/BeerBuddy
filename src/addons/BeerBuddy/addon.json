@@ -8,5 +8,14 @@
     "dev_url": "https://drcat.fun/",
     "require": {
         "XF": "2.2"
+    },
+    "extra": {
+        "admin_navigation": {
+            "beerbuddy": {
+                "title": "BeerBuddy Dashboard",
+                "href": "admin.php?beerbuddy/",
+                "icon": "fa-beer"
+            }
+        }
     }
 }
