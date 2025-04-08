@@ -3,26 +3,21 @@
 namespace BeerBuddy;
 
 use XF\AddOn\AbstractSetup;
-use XF\AddOn\StepRunnerInstallTrait;
-use XF\AddOn\StepRunnerUninstallTrait;
-use XF\AddOn\StepRunnerUpgradeTrait;
 
 class Setup extends AbstractSetup
 {
-    use StepRunnerInstallTrait;
-    use StepRunnerUninstallTrait;
-    use StepRunnerUpgradeTrait;
-
-    public function installStep1()
+    public function install(array $stepParams = [])
     {
-        $this->schema()->createTable('xf_beerbuddy_cache', function ($table) {
-            $table->addColumn('beer_name', 'varchar', 255)->primaryKey();
-            $table->addColumn('url', 'text');
-        });
+        // just use the database instead of this; placeholder
     }
 
-    public function uninstallStep1()
+    public function uninstall(array $stepParams = [])
     {
-        $this->schema()->dropTable('xf_beerbuddy_cache');
+        // add an uninstaller later
+    }
+
+    public function upgrade(array $stepParams = [])
+    {
+        // placeholder for an upgrader thing
     }
 }
